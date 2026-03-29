@@ -1,2 +1,14 @@
 # DUAL-MODE-RESCUE-COMMUNICATOR-USING-STM32-BLE-ZIGBEE
 This project involves core embedded concepts like UART communication, interrupt-driven programming, timer and PWM configuration, real-time event handling, GPS data parsing, and microcontroller peripheral interfacing on STM32
+
+
+
+Natural disasters, particularly floods, frequently cause widespread damage to communication infrastructure, resulting in severe challenges for rescue teams in locating and assisting stranded victims within critical time frames. In such scenarios, the absence of reliable communication networks and the lack of real-time victim location information significantly delay rescue operations, leading to increased loss of life and inefficient utilization of rescue resources. Traditional rescue methods rely predominantly on manual search operations, which are time-consuming, labor-intensive, and prone to human error, 
+especially in large or inaccessible flooded areas. 
+
+This mini project presents the design and development of a Dual-Mode Rescue Communicator using STM32 and ZigBee–BLE technologies, aimed at improving the efficiency and reliability of flood rescue operations. The proposed system adopts a patrolfirst detection approach, where a mobile rescue unit continuously scans disaster-affected regions to identify the presence of humans using Bluetooth Low Energy (BLE) beacon signals transmitted from smartphones or dedicated emergency beacon applications. BLE is chosen for its low power consumption, wide availability in modern devices, and suitability for short-range human presence detection. 
+
+Once a human presence is detected, the system automatically acquires precise geographical location information using a Global Positioning System (GPS) module. The extracted coordinates are then transmitted as a priority alert to a remote rescue coordination center through a ZigBee-based wireless mesh network, enabling long-range, low-power, and reliable communication even in environments where conventional cellular networks are unavailable. The dual-mode communication strategy ensures effective short-range detection combined with robust long-range alert transmission. 
+
+An STM32 microcontroller acts as the core processing unit, managing BLE scanning, GPS data parsing, ZigBee communication, and timing operations in a non-blocking manner. The system is designed to support simultaneous rescue missions by marking 
+detected locations as important priority (IMP) zones while allowing ongoing rescue operations to continue without interruption. Experimental validation demonstrates reduced alert latency, stable wireless communication, and improved patrol efficiency, highlighting the potential of the proposed system as a scalable, cost-effective, and practical solution for modern disaster response applications.
